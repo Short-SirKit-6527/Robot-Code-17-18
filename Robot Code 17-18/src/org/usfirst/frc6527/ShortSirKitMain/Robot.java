@@ -273,10 +273,10 @@ public class Robot extends IterativeRobot {
         
         //script for dumper, winch and camera
         camservo.set(xboxController.getRawAxis(5) / 2 + 0.5); //changes camera servo angle
-        if (xboxController.getRawButton(4)) test.set(DoubleSolenoid.Value.kForward);//winch.set(1); // tells winch to move when button 4 is pressed
+        if (xboxController.getRawButton(4)) winch.set(1);//test.set(DoubleSolenoid.Value.kForward); // tells winch to move when button 4 is pressed
         
-        //else winch.set(0);
-        if (xboxController.getRawButton(3)) test.set(DoubleSolenoid.Value.kReverse);//dumper.set(0.5); // tells dumper to dump when winch is set
+        else winch.set(0);
+        if (xboxController.getRawButton(3)) dumper.set(0.5);//test.set(DoubleSolenoid.Value.kReverse); // tells dumper to dump when winch is set
         //else dumper.set(-0.5);
         
         

@@ -10,7 +10,7 @@
 
 
 package org.usfirst.frc6527.ShortSirKitMain.commands;
-import org.usfirst.frc6527.ShortSirKitMain.Robot;
+import org.usfirst.frc6527.ShortSirKitTest.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
 
